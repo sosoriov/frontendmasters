@@ -1,0 +1,28 @@
+<html>
+
+<head>
+	<!-- including Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script>
+       // run this function when the document is loaded
+       window.onload = function() {
+         var heading = document.createElement("h1");
+         var heading_text = document.createTextNode("Big Head in JAVASCRIPT!");
+         heading.appendChild(heading_text);
+         document.body.appendChild(heading);
+      }
+
+      jQuery( document ).ready(function() {
+          console.log( "ready!" );
+      });
+
+    </script>
+
+</head>
+
+<body>
+	<h1>Big head in HTML !</h1>
+</body>
+
+</html>
