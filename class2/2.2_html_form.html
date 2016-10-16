@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	<title>Forms</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		crossorigin="anonymous">
+    
+    <!-- including Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="js/forms.js"></script>
+</head>
+
+<body>
+	<div class="container">
+        <h1>Form Examples</h1>
+		<div class="row">
+            <h2>Buttons</h2>
+
+			<!-- Standard button -->
+			<button type="button" class="btn btn-default">Default</button>
+
+			<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+			<button type="button" class="btn btn-primary">Primary</button>
+
+			<!-- Indicates a successful or positive action -->
+			<button type="button" class="btn btn-success">Success</button>
+
+			<!-- Contextual button for informational alert messages -->
+			<button type="button" class="btn btn-info">Info</button>
+
+			<!-- Indicates caution should be taken with this action -->
+			<button type="button" class="btn btn-warning">Warning</button>
+
+			<!-- Indicates a dangerous or potentially negative action -->
+			<button type="button" class="btn btn-danger">Danger</button>
+
+			<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+			<button type="button" class="btn btn-link">Link</button>
+		</div>
+
+		<div class="row">
+			<h2>Forms</h2>
+			<div class="form-area">
+				<form role="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+						<label>Select your car brand</label>
+						<select class="form-control" id="car" name="car">
+                        <option value=""></option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+						<span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
+					</div>
+
+					<button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
